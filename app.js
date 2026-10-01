@@ -663,8 +663,8 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileDrawer.classList.toggle('open');
     });
 
-    mobileDrawer.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
+    mobileDrawer.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('click', () => {
         mobileDrawer.classList.remove('open');
       });
     });
